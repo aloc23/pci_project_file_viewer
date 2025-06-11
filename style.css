@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #005B96;
+  color: white;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+}
+header .logo {
+  max-height: 50px;
+  margin-right: 1em;
+}
+h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+main {
+  padding: 1em;
+}
+.file-selector {
+  margin-bottom: 1em;
+}
+label {
+  font-weight: bold;
+}
+#folderSelect {
+  margin-left: 0.5em;
+}
+#fileList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1em;
+}
+#fileList li {
+  margin-bottom: 0.5em;
+}
+#fileList a {
+  text-decoration: none;
+  color: #005B96;
+  font-weight: bold;
+}
+#fileList a:hover {
+  text-decoration: underline;
+}
+.viewer {
+  width: 100%;
+  height: 600px;
+  border: 1px solid #ccc;
+  margin-top: 1em;
+}
+footer {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+}
