@@ -15,7 +15,7 @@
   <main>
     <section class="file-selector">
       <label for="folderSelect">Select Folder:</label>
-      <select id="folderSelect">
+      <select id="folderSelect" onchange="loadFiles()">
         <option value="">-- Choose --</option>
         <option value="draft contracts">Draft Contracts</option>
         <option value="drawings">Drawings</option>
@@ -25,21 +25,7 @@
       </select>
       <ul id="fileList"></ul>
     </section>
-    <section id="uploadSection">
-      <form id="fileUploadForm" enctype="multipart/form-data">
-        <label for="fileInput">Upload File:</label>
-        <input type="file" id="fileInput" multiple>
-        <button type="submit">Upload</button>
-      </form>
-    </section>
-    <section id="uploadedFilesSection">
-      <h3>Uploaded Files (Local to this browser)</h3>
-      <div id="uploadedFiles"></div>
-    </section>
-    <section id="previewSection" style="margin-top:2rem;">
-      <h3>Preview</h3>
-      <div id="previewArea"></div>
-    </section>
+    <iframe id="fileViewer" class="viewer" hidden></iframe>
   </main>
   <footer>
     <p>&copy; 2025 PCI Planner</p>
