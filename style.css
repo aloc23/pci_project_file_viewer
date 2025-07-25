@@ -51,6 +51,70 @@ label {
   height: 600px;
   border: 1px solid #ccc;
   margin-top: 1em;
+  /* Add/extend styles for upload UI and file list */
+#fileUploadForm {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+#fileInput {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.3rem;
+}
+
+.files-tab button {
+  background: var(--main-color);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: background 0.2s;
+}
+
+.files-tab button:hover {
+  background: var(--accent-color);
+}
+
+.file-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.file-item {
+  background: var(--section-bg);
+  border-radius: 6px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.04);
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  transition: box-shadow 0.2s;
+}
+
+.file-item:hover {
+  box-shadow: 0 0 12px rgba(33,150,243,0.18);
+}
+
+.file-icon {
+  font-size: 2rem;
+  color: var(--file-icon);
+}
+
+.file-name {
+  flex-grow: 1;
+  font-weight: 600;
+}
+
+.file-type, .file-modified {
+  font-size: 0.9rem;
+  color: #888;
+}
 }
 footer {
   background-color: #f4f4f4;
