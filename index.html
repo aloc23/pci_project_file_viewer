@@ -27,6 +27,15 @@
     </section>
     <iframe id="fileViewer" class="viewer" hidden></iframe>
   </main>
+  <!-- Add to your Files tab section -->
+<section id="filesTab" class="tab-content hidden files-tab">
+  <h2>Files</h2>
+  <form id="fileUploadForm" enctype="multipart/form-data">
+    <input type="file" id="fileInput" multiple>
+    <button type="submit">Upload</button>
+  </form>
+  <div id="filesTabContent"></div>
+</section>
   <footer>
     <p>&copy; 2025 PCI Planner</p>
   </footer>
