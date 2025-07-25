@@ -2,6 +2,8 @@ const fileMap = {
   "draft contracts": [
     "Mayweather_DAFC_Lease_Agreement_2025.pdf",
     "Mayweather_DAFC_Heads_of_Terms_2025.pdf"
+    "Draft_lease_agreement_V1 2.docx"
+    
   ],
   "drawings": [
     "club overview.pdf",
